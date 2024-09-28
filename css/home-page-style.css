@@ -5,18 +5,6 @@ body{
     background-color: var(--primary-color);
 }
 
-/*body::before{
-    content: "";
-    background-image: url("/img/Connect-png.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0.15;
-    
-}*/
 
 .s-menu{
     padding: 1rem 0;
@@ -29,13 +17,16 @@ body{
 .s-menu_item{
     display: inline-block; /*lado a lado */
     text-transform: uppercase;
-    margin: 0 1.25rem;
+    margin: 0 1.5rem;
 }
 
+.s-menu_item a {
+    font-size: 20px;
+}
 
 .s-menu_icon {
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     margin: 0 1.25rem;
     vertical-align: middle;
 }
@@ -45,21 +36,12 @@ body{
     height: auto; /* Mantém a proporção da imagem */
 }
 
-.s-container{
-    position: relative;
-    display: flex;
-    flex-direction: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.s-card img {
+/*.s-card img {
     border: 0.5rem solid white;
     width: calc(100%/2);
     height: 70vh;
     position: relative;
-
-}
+}*/
 
 .box{
     position: relative;
@@ -75,7 +57,7 @@ body{
         inset: 0;
         z-index: 2;
         pointer-events: none;
-        background-image: linear-gradient(180deg, transparent, #000000);
+        /*background-image: linear-gradient(180deg, transparent, #000000);*/
         
     }
     
@@ -84,11 +66,13 @@ body{
     width: 80%; /* A imagem vai ocupar toda a largura disponível */
     height: 90%; /* A imagem vai ocupar toda a altura disponível */
     object-fit: cover; /* Garante que a imagem seja cortada para caber no contêiner, sem distorcer */
-    z-index: 2;
+    z-index: 1;
+   border: 1px solid green;
 }
 
-swiper-slide-active img {
-    opacity: 0.5; /* Opacidade aplicada apenas ao slide ativo */
+.swiper-slide-active img {
+    opacity: 0.6; /* Ajuste a opacidade conforme necessário */
+    transition: opacity 0.3s ease-in-out; /* Para uma transição suave ao mudar os slides */
 }
 
 /* Para garantir que o slide e as imagens tenham tamanhos fixos */
@@ -98,5 +82,30 @@ swiper-slide-active img {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    background-color: black;
+}
+
+.botaofps{
+    position: absolute;
+    top: 60%; /* Posiciona o botão 50% de cima para baixo */
+     /* Posiciona o botão 50% da esquerda para a direita */
+     left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o botão */
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 2;
+}
+
+.textofps{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 35%;
+    z-index: 2;
 }
 
