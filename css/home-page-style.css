@@ -1,0 +1,102 @@
+@import url('/css/reset.css');
+@import url('/css/global.css');
+
+body{
+    background-color: var(--primary-color);
+}
+
+/*body::before{
+    content: "";
+    background-image: url("/img/Connect-png.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.15;
+    
+}*/
+
+.s-menu{
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    position: relative; /*menu por cima do background*/
+    
+}
+
+.s-menu_item{
+    display: inline-block; /*lado a lado */
+    text-transform: uppercase;
+    margin: 0 1.25rem;
+}
+
+
+.s-menu_icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1.25rem;
+    vertical-align: middle;
+}
+
+.s-menu_icon img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.s-container{
+    position: relative;
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.s-card img {
+    border: 0.5rem solid white;
+    width: calc(100%/2);
+    height: 70vh;
+    position: relative;
+
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+    .box::before{
+        content: "";
+        width: 100%;
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        pointer-events: none;
+        background-image: linear-gradient(180deg, transparent, #000000);
+        
+    }
+    
+
+.swiper-slide img {
+    width: 80%; /* A imagem vai ocupar toda a largura disponível */
+    height: 90%; /* A imagem vai ocupar toda a altura disponível */
+    object-fit: cover; /* Garante que a imagem seja cortada para caber no contêiner, sem distorcer */
+    z-index: 2;
+}
+
+swiper-slide-active img {
+    opacity: 0.5; /* Opacidade aplicada apenas ao slide ativo */
+}
+
+/* Para garantir que o slide e as imagens tenham tamanhos fixos */
+.swiper-slide {
+    width: 100%; /* O slide ocupa toda a largura do contêiner */
+    height: 70vh; /* Altura de 70% da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
