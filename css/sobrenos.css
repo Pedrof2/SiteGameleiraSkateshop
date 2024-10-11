@@ -1,43 +1,46 @@
-.sobrenos h1 {
+@font-face {
+    font-family: 'Gemstone';
+    src: url('css/fonts/Gemstone.ttf') format('truetype');
+  }
+
+ h1 {
     font-size: 50px;
     color: white;
     margin-top: -160px;
     text-align: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Gemstone';
     
 }
 
 .sobrenos text {
-display: flex;
 text-align: justify;
-font-size: 20px;
+font-size: 30px;
 margin: 10px;
-padding: 20px;
-display: flex;
-justify-content: right; /* Centraliza a área de conteúdo */
-align-items: center;
-margin: 50px 0;
 
 }
 
 .sobrenos p{
-    font-size: 20px;
+    font-size: 23px;
+    text-align: center;
+    padding: 40px;
 }
 
 .sobrenos h2{
-    text-align: left;
+    text-align: center;
     color: white;
 }
-
-.conteudo {
+.images{
     display: flex;
-    flex-direction: row; /* Alinha a imagem e o texto lado a lado */
-    align-items: justify;
-
 }
 
-.sobrenos img{
+.logo{
+    width: 40%;
+}
+
+.arvore{
+    height: 500px;
     border: 1px solid green;
     margin: 50px;
 }
+
 
